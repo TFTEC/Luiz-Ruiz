@@ -95,8 +95,13 @@ a2enmod rewrite
 ```js
 a2enconf glpi.conf
 ```
+
 # Reinicialização do servidor web para buscar a nova configuração
+```js
 service apache2 restart
+```
 
 # Ao final da instalação, realize a exclusão do arquivo install.php
+```js
 rm /var/www/html/install/install.php
+```
